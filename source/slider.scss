@@ -19,9 +19,10 @@
   display: none;
 }
 
+
 #prev {
   position: absolute;
-  top: 43%;
+  top: 28em;
   left: 0;
   cursor: pointer;
   padding: 16px;
@@ -32,7 +33,7 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    
+    top: 10%;
     left: -3px;
     font-size: 2rem;
     color: black;
@@ -41,7 +42,7 @@
 
 #next {
   position: absolute;
-  top: 43%;
+  top: 28em;
   right: 0;
   cursor: pointer;
   padding: 16px;
@@ -52,8 +53,8 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    
-    right: 38px;
+    top: 10%;
+    right: 4em;
     font-size: 2rem;
     color: black;
   }

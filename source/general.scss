@@ -34,11 +34,14 @@ a {
   }
 }
 .all-sections{
-
   padding-bottom: 4rem;
   border-bottom: 1px solid black;
   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
 margin-top: 4rem;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  padding-bottom: 2rem;
+  width: 20rem;
+}
 }
 .title-all{
   margin-bottom: 2.5rem;
@@ -51,6 +54,10 @@ margin-top: 4rem;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 2em;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
 }
 .add_button{
   border-radius: 15px;
