@@ -17,7 +17,8 @@
         width: 10em;
         @media screen and (min-width: 320px) and (max-width: 480px) {
             width: 5em;
-        
+        margin-left: auto;
+        margin-right: auto;
 
         }
     }
@@ -30,6 +31,10 @@
         display: flex;
 gap: 5px;
         justify-content: center;
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+         flex-direction: column;
+align-items: center;
+        }
     }
 
     &__item-price {

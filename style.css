@@ -79,6 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header {
+    margin-left: auto;
+    margin-right: auto;
     width: 20em;
   }
 }
@@ -459,6 +461,8 @@ html {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .main {
+    margin-left: auto;
+    margin-right: auto;
     width: 20em;
   }
 }
@@ -655,6 +659,8 @@ a {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .drink__item-img {
     width: 5em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .drink__item-title {
@@ -668,6 +674,17 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .drink__item-order {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .drink__item-price {
   font-size: 1em;
