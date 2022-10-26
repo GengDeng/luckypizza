@@ -392,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .pizza {
-    width: 20rem;
+    width: 20em;
   }
 }
 .pizza__item {
@@ -445,6 +445,31 @@ html {
   -webkit-box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
           box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
   font-family: "Fuzzy Bubbles", cursive;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .main {
+    width: 20em;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .main {
+    width: 30em;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+  .main {
+    width: 40em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .main {
+    width: 48em;
+  }
+}
+@media screen and (min-width: 980px) and (max-width: 1199px) {
+  .main {
+    width: 61em;
+  }
 }
 
 body {
