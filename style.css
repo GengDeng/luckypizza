@@ -303,9 +303,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #prev {
-    margin-top: 4rem;
-    left: -4px;
+    left: -3px;
     font-size: 2rem;
+    color: black;
   }
 }
 
@@ -328,9 +328,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #next {
-    margin-top: 4rem;
     right: 38px;
     font-size: 2rem;
+    color: black;
   }
 }
 
@@ -356,7 +356,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .active {
-  background-color: #717171;
+  background-color: black;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .active {
+    background-color: black;
+  }
 }
 
 .fade {

@@ -13,7 +13,6 @@
   @media screen and (min-width: 320px) and (max-width: 480px) {
     height: 10em;
     width: 16em;
-   
   }
 }
 .image {
@@ -33,9 +32,10 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    margin-top: 4rem;
-   left: -4px;
-   font-size: 2rem;
+    
+    left: -3px;
+    font-size: 2rem;
+    color: black;
   }
 }
 
@@ -52,10 +52,10 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
   @media screen and (min-width: 320px) and (max-width: 480px) {
-    margin-top: 4rem;
-   right: 38px;
-   
-   font-size: 2rem;
+    
+    right: 38px;
+    font-size: 2rem;
+    color: black;
   }
 }
 
@@ -81,7 +81,11 @@
 }
 
 .active {
-  background-color: #717171;
+  background-color: black;
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    background-color: black;
+  }
+  
 }
 
 .fade {
