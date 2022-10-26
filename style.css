@@ -329,7 +329,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #next {
-    top: 20%;
+    top: 20rem;
     right: 4em;
     font-size: 2rem;
     color: black;
@@ -651,6 +651,11 @@ a {
 }
 .drink__item-img {
   width: 10em;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .drink__item-img {
+    width: 5em;
+  }
 }
 .drink__item-title {
   font-size: 1em;
