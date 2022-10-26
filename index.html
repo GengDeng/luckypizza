@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Pizza</title>
+  </head>
+  <body>
+    
+      <header class="header">
+        <div class="header__up-content">
+          <p class="header__address">Брест <br>ул. Гоголя, 57 </p>
+            <div class="header__logo">LUCKY PIZZA</div>
+          <div class="header__worktime">
+            <p class="header__work">Ежедневно с 11:00 до 23:00</p>
+          </div>
+        </div>
+        <div class="header__down-content" hidden>
+          <div class="header__telephone">
+            <a href="tel:+375333184237">Телефон</a>
+          </div>
+          <nav class="header__nav" >
+            <ul class="header__list">
+              <li class="header__item"> <a href="#slider">Акции</a> </li>
+              <li class="header__item"><a href="#pizza">Пиццы</a></li>
+              <li class="header__item"><a href="#sause">Соусы</a></li>
+              <li class="header__item"><a href="#drink">Напитки</a></li>
+            </ul>
+          </nav>
+          <a href="#" class="header__basket">
+            <button class="header__info-btn">
+             <i class="fa-solid fa-cart-shopping"></i>
+              
+              <span class="header__btn-total">00 руб</span>
+            </button>
+          </a>
+        </div>
+      
+      </header>
+      <main class="main">
+        <section  class="slider"><a name ="slider"></a>
+          <div class="image fade">
+            <img class="img-size" src="img\k3wfq21nag8j1zk2nr1gndc1bx1y5n00.png" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\z363tlepciir69t0s4uk36optsr43kv7.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\vyarokwecimtzoz3t4jaolkk8auvhg0k.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size"  src="img\f658ldlat8n5rbzjj98dzjwv4ymej05n.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\6s3fo4oeo4nscp33848y5pxvom9hmx70.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\k3wfq21nag8j1zk2nr1gndc1bx1y5n00.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\k3wfq21nag8j1zk2nr1gndc1bx1y5n00.png" alt="" />
+          </div>
+          <div class="image fade">
+            <img class="img-size" src="img\k3wfq21nag8j1zk2nr1gndc1bx1y5n00.png" alt="" />
+          </div>
+    
+          
+          <a id="prev" onclick="showSlides(slideIndex--)">&#10094;</a>
+          <a id="next" onclick="showSlides(slideIndex++)">&#10095;</a>
+    
+    
+          <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </section>
+      <div class="container">
+        
+        <section name="pizza" class="pizza all-sections">
+          <a name="pizza"></a>
+          <h1 class="pizza__title title-all">Пиццы</h1>
+          <div class="pizza__catalog catalog-all">
+            <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div>
+            <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div>
+        </section>
+        <section class="sause all-sections">
+          <a name="sause"></a>
+          <h1 class="sause__title title-all">Соусы</h1>
+          <div class="sause__catalog catalog-all">
+            <div class="sause__item">
+              <img
+                src="img\1000island.png"
+                alt="соус тысяча островов"
+                class="sause__item-img"
+              />
+                <h2 class="sause__item-title all-title">Тысяча островов</h2>
+              <div class="sause__item-order all-order">
+                <span class="sause__item-price all-price">15 руб</span>
+                <button class="sause__item-add add_button">В корзину</button>
+              </div>
+            </div>
+            <div class="sause__item">
+              <img
+                src="img\bbq.png"
+                alt="Соус барбекю"
+                class="sause__item-img"
+              />
+                <h2 class="sause__item-title all-title">Барбекю</h2>
+              <div class="sause__item-order all-order">
+                <span class="sause__item-price all-price">15 руб</span>
+                <button class="sause__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="sause__item">
+              <img
+                src="img\garlik.webp"
+                alt="чесночный соус"
+                class="sause__item-img"
+              />
+                <h2 class="sause__item-title all-title">Чесночный</h2>
+              <div class="sause__item-order all-order">
+                <span class="sause__item-price all-price">15 руб</span>
+                <button class="sause__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="sause__item">
+              <img
+                src="img\сырный.png"
+                alt="сырный соус"
+                class="sause__item-img"
+              />
+                <h2 class="sause__item-title all-title">Сырный</h2>
+              <div class="sause__item-order all-order">
+                <span class="sause__item-price all-price">15 руб</span>
+                <button class="sause__item-add add_button">В корзину</button>
+              </div>
+            </div>
+        </section>
+        <section class="drink ">
+          <a name="drink"></a>
+          <h1 class="drink__title title-all">Напитки</h1>
+          <div class="drink__catalog catalog-all">
+            <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div>
+            <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="fanta"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Fanta</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\fanta_PNG59.png"
+                alt="Fanta"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Fanta</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div> <div class="drink__item">
+              <img
+                src="img\cocacola_PNG15.png"
+                alt="Coca-cola"
+                class="drink__item-img"
+              />
+                <h2 class="drink__item-title all-title">Coca-cola</h2>
+              <div class="drink__item-order all-order">
+                <span class="drink__item-price all-price">15 руб</span>
+                <button class="drink__item-add add_button">В корзину</button>
+              </div>
+            </div>
+          </div>
+          </section>
+      
+    </div>
+  </main>
+    <footer class="footer">
+      <div class="container">
+<div class="foter__contact">
+  <ul class="footer__contact-list">
+    <li class="footer__item-tel"><a href="tel:+375333184237">Телефон</a></li>
+    <li class="footer__item-addres">г. Брест ,ул. Гоголя, 57</li>
+    <li class="footer__item-map"><a href="https://www.google.com/maps/place/%D0%A1%D1%83%D1%88%D0%B8+%D0%A8%D0%BE%D0%BF+%D0%91%D1%80%D0%B5%D1%81%D1%82/@52.0927125,23.6920834,17z/data=!4m15!1m8!3m7!1s0x47210bf0603e443d:0x817c3d00ba4872f0!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDU3LCDQkdGA0LXRgdGC!3b1!8m2!3d52.0927125!4d23.6942721!16s%2Fg%2F11b8v4t247!3m5!1s0x47210babdf8e5a77:0xc6fd0f1575011083!8m2!3d52.0927843!4d23.694337!16s%2Fg%2F11fqpx9gjd?hl=ru" target="_blank">Показать на карте</a></li>
+  </ul>
+</div>
+<div class="instagramm"><a href="https://www.instagram.com/lucky_pizza_brest/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa-brands fa-instagram"></i>      Instagram     </a></div>
+      </div>
+    </footer>
+    <script src="js\slider.js"></script>
+    <script src="js\script.js"></script>
+    
+  </body>
+</html>

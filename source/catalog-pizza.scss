@@ -1,0 +1,46 @@
+.pizza {
+
+  &__title { 
+  }
+  &__catalog {
+  }
+  &__item {
+    width: 18em;
+    height: 37em;
+    display: flex;  
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  &__item-img {
+    border-radius: 15px;
+  }
+
+  &__item-info {
+    display: flex;  
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__item-title {
+    
+  }
+
+  &__consist {
+    color: gray;
+    text-align: center;
+    
+  }
+
+  &__item-order{
+    
+
+  }
+  &__item-price {
+   
+  }
+
+  &__item-add {
+    
+  }
+}
