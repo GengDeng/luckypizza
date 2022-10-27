@@ -286,15 +286,24 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.slider-interface {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #prev {
-  position: absolute;
-  top: 28em;
-  left: 0;
   cursor: pointer;
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 3rem;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -305,22 +314,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #prev {
-    top: 20rem;
-    left: -3px;
     font-size: 2rem;
     color: black;
   }
 }
 
 #next {
-  position: absolute;
-  top: 28em;
-  right: 0;
   cursor: pointer;
   padding: 16px;
   color: #fff;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 3rem;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
@@ -331,8 +335,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #next {
-    top: 20rem;
-    right: 4em;
     font-size: 2rem;
     color: black;
   }
@@ -429,6 +431,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pizza__item-img {
   border-radius: 15px;
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .pizza__item-img {
+    width: 13rem;
+    height: 17.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .pizza__item-info {
   display: -webkit-box;

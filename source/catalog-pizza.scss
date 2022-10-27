@@ -26,6 +26,12 @@
 
   &__item-img {
     border-radius: 15px;
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      width: 13rem;
+      height: 17.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__item-info {
