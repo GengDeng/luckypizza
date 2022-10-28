@@ -240,6 +240,30 @@ h1, h2, h3, h4, h5, h6 {
   .header__basket-fixed {
     top: 4rem;
     right: auto;
+    -webkit-animation-name: show_basket320;
+            animation-name: show_basket320;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+  }
+}
+@-webkit-keyframes show_basket320 {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 4rem;
+  }
+}
+@keyframes show_basket320 {
+  0% {
+    opacity: 0;
+    top: -70px;
+  }
+  100% {
+    opacity: 1;
+    top: 4rem;
   }
 }
 @-webkit-keyframes show_basket {
@@ -249,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 1;
-    top: 4rem;
+    top: 2rem;
   }
 }
 @keyframes show_basket {
@@ -259,7 +283,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   100% {
     opacity: 1;
-    top: 4rem;
+    top: 2rem;
   }
 }
 @-webkit-keyframes show_nav {

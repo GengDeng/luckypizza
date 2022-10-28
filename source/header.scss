@@ -118,9 +118,11 @@
     @media screen and (min-width: 320px) and (max-width: 480px) {
        top: 4rem;
        right: auto;
+       animation-name: show_basket320;
+    animation-duration: 0.5s;
     }
   }
-  @keyframes show_basket {
+  @keyframes show_basket320 {
     0%{
       opacity: 0;
       top: -70px;
@@ -128,6 +130,15 @@
     100%{
       opacity: 1;
       top: 4rem;
+    }}
+  @keyframes show_basket {
+    0%{
+      opacity: 0;
+      top: -70px;
+    }
+    100%{
+      opacity: 1;
+      top: 2rem;
     }}
   @keyframes show_nav {
     0%{
