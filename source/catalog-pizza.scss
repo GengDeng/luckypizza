@@ -3,10 +3,17 @@
   
     width: 20em;
   }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 30em;
+  }
   &__title { 
   }
   &__catalog {
     @media screen and (min-width: 320px) and (max-width: 480px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media screen and (min-width: 481px) and (max-width: 767px) {
       flex-direction: column;
       align-items: center;
     }
@@ -22,6 +29,7 @@
     height: 32em;
     gap: 0.5rem;
     }
+   
   }
 
   &__item-img {

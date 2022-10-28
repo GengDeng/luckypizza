@@ -3,6 +3,10 @@
   @media screen and (min-width: 320px) and (max-width: 480px) {
     width: 20em;
   }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    width: 30em;
+    
+  }
 }
 .img-size {
   width: 95%;
@@ -14,6 +18,11 @@
     height: 10em;
     width: 16em;
   }
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    height: 15em;
+    width: 25em;
+ 
+  }
 }
 .image {
   display: none;
@@ -22,6 +31,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+  }
 }
 
 #prev {
