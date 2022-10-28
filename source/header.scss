@@ -98,7 +98,7 @@
     z-index: 50;
     background: #f5a206;
     top: 0;
-    align: center;
+
     right: 0;
     animation-name: show_nav;
     animation-duration: 0.5s;
@@ -111,12 +111,13 @@
     position: fixed;
     top: 0;
     z-index: 50;
-    top: 1.8rem;
+    top: 2rem;
     right: 0;
     animation-name: show_basket;
     animation-duration: 0.5s;
     @media screen and (min-width: 320px) and (max-width: 480px) {
        top: 4rem;
+       right: auto;
     }
   }
   @keyframes show_basket {

@@ -213,7 +213,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 50;
   background: #f5a206;
   top: 0;
-  align: center;
   right: 0;
   -webkit-animation-name: show_nav;
           animation-name: show_nav;
@@ -230,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   top: 0;
   z-index: 50;
-  top: 1.8rem;
+  top: 2rem;
   right: 0;
   -webkit-animation-name: show_basket;
           animation-name: show_basket;
@@ -240,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .header__basket-fixed {
     top: 4rem;
+    right: auto;
   }
 }
 @-webkit-keyframes show_basket {
