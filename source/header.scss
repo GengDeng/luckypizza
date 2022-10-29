@@ -13,10 +13,14 @@
     width: 40em;
   }
   @media screen and (min-width: 768px) and (max-width: 979px) {
-    width: 48em;
+    width: 47em;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 980px) and (max-width: 1199px) {
     width: 61em;
+    margin-left: auto;
+    margin-right: auto;
   }
   border-bottom: 1px solid black;
   box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
@@ -38,6 +42,15 @@
       width: 29em;
       display: flex;
       justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+      display: flex;
+      justify-content: center;
+      gap: 3em;
+      width: 48em;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1199px) {
+      width: 61em;
     }
   }
   &__address {
@@ -96,6 +109,15 @@
       flex-direction: column;
       align-items: center;
     }
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+      display: flex;
+      justify-content: center;
+      gap: 3em;
+      width: 48em;
+    }
+    @media screen and (min-width: 980px) and (max-width: 1199px) {
+      width: 61em;
+    }
   }
   &__telephone {
     margin-top: auto;
@@ -106,22 +128,27 @@
     @media screen and (min-width: 481px) and (max-width: 767px) {
       display: none;
     }
+    @media screen and (min-width: 768px) and (max-width: 979px) {
+      display: none;
+    }
   }
   &__nav {
     margin: auto auto 0 auto;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     @media screen and (min-width: 320px) and (max-width: 480px) {
       width: 10em;
+    }
+    @media screen and (min-width: 768px) and (max-width: 979px) {
     }
   }
   &__nav-fixed {
     margin: auto auto 0 auto;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     position: fixed;
     z-index: 50;
     background: #f5a206;
     top: 0;
-border-radius: 15px;
+    border-radius: 15px;
     right: 0;
     animation-name: show_nav;
     animation-duration: 0.5s;
@@ -139,36 +166,38 @@ border-radius: 15px;
     animation-name: show_basket;
     animation-duration: 0.5s;
     @media screen and (min-width: 320px) and (max-width: 480px) {
-       top: 4rem;
-       right: auto;
-       animation-name: show_basket320;
-    animation-duration: 0.5s;
+      top: 4rem;
+      right: auto;
+      animation-name: show_basket320;
+      animation-duration: 0.5s;
     }
   }
   @keyframes show_basket320 {
-    0%{
+    0% {
       opacity: 0;
       top: -70px;
     }
-    100%{
+    100% {
       opacity: 1;
       top: 4rem;
-    }}
+    }
+  }
   @keyframes show_basket {
-    0%{
+    0% {
       opacity: 0;
       top: -70px;
     }
-    100%{
+    100% {
       opacity: 1;
       top: 2rem;
-    }}
+    }
+  }
   @keyframes show_nav {
-    0%{
+    0% {
       opacity: 0;
       top: -70px;
     }
-    100%{
+    100% {
       opacity: 1;
       top: 0;
     }
