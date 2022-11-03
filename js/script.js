@@ -10,3 +10,4 @@ window.onscroll = function showNav() {
     basket.classList.remove("header__basket-fixed");
   }
 };
+
