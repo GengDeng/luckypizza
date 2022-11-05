@@ -12,7 +12,7 @@
     <title>Pizza</title>
   </head>
   <body>
-    
+   
       <header class="header">
         <div class="header__up-content">
           <p class="header__address">Брест <br>ул. Гоголя, 57 </p>
@@ -34,19 +34,22 @@
               <li class="header__item"><a href="#drink">Напитки</a></li>
             </ul>
           </nav>
-          <a href="#" class="header__basket">
+          <a href="#" id="checkout" class="header__basket">
             <button class="header__info-btn">
              <i class="fa-solid fa-cart-shopping"></i>
               
               <span class="header__btn-total">00 руб</span>
             </button>
           </a>
+          <button id="clear_cart">Очистить корзину</button>
         </div>
       
       </header>
       <main class="main">
         
       <div class="container">
+        <div class="basket-wrapper all-sections">
+        </div>
         <section  class="slider"><a name ="slider"></a>
           <div class="slider-interface">
           <a id="prev" onclick="showSlides(slideIndex--)">&#10094;</a>
@@ -115,9 +118,29 @@
               </div>
               <div class="pizza__item-order all-order">
                 <span class="pizza__item-price all-price">15 руб</span>
-                <button class="pizza__item-add add_button">В корзину</button>
+                <button  data-id="pizza1" class="pizza__item-add add_button">В корзину</button>
               </div>
-            
+            </div>
+            <div  class="pizza__item">
+              <img
+                src="img\photo-1593560708920-61dd98c46a4e.jpeg"
+                alt="Пицца маргарита"
+                class="pizza__item-img"
+              />
+              <div class="pizza__item-info">
+                <h2 class="pizza__item-title all-title">Маргарита</h2>
+                <p class="pizza__consist">
+                  острый перец халапеньо, чесночный соус, сладкий соус чили,
+                  пепперони, грудинка, свежий болгарский перец, сыр моцарелла,
+                  перец кайенский
+                </p>
+              </div>
+              <div class="pizza__item-order all-order">
+                <span class="pizza__item-price all-price">15 руб</span>
+                <button data-id="pizza2" class="pizza__item-add add_button">В корзину</button>
+              </div>
+            </div>
+            </div>
         </section>
         <section class="sause all-sections">
           <a name="sause"></a>
@@ -347,36 +370,8 @@
 <div class="instagramm"><a href="https://www.instagram.com/lucky_pizza_brest/?igshid=YmMyMTA2M2Y%3D" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a></div>
       </div>
     </footer>
-    <link rel="stylesheet" href="smartbasket/css/smartbasket.min.css">
-
-<div class="smart-basket__wrapper"></div>
-
-<script src="./smartbasket/js/smartbasket.min.js"></script>
-
-	<script>
-		$(function () {
-			$('.smart-basket__wrapper').smbasket({
-				productElement: 'клас обвертки карточки товара',
-				buttonAddToBasket: 'клас кнопки купить',
-				productPrice: 'product__price-number',
-				productSize: 'product__size-element',
-				
-				productQuantityWrapper: 'product__quantity',
-				smartBasketMinArea: 'класс корзины',
-				countryCode: '+7',
-				smartBasketCurrency: '₽',
-				smartBasketMinIconPath: './smartbasket/img/shopping-basket-wight.svg',
-
-				agreement: {
-					isRequired: true,
-					isChecked: true,
-					isLink: 'https://artstranger.ru/privacy.html',
-				},
-				nameIsRequired: false,
-			});
-		});
-	</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="js\basket.js"></script>
     <script src="js\slider.js"></script>
     <script src="js\script.js"></script>
     

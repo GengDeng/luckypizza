@@ -1008,3 +1008,7 @@ a {
   width: 5.3rem;
   height: 1.5rem;
 }
+
+.basket-wrapper {
+  z-index: 50;
+}
