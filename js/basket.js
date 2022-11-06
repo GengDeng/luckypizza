@@ -31,9 +31,8 @@ function addToCart(e) {
   let cartData = getCartData() || {}; // получаем данные корзины или создаём новый объект, если данных еще нет
   parentBox = this.parentNode, // родительский элемент кнопки "Добавить в корзину"
     itemId = this.getAttribute("data-id"), // ID товара
-    itemTitle = d.querySelector(".pizza__item-title").
-    innerHTML, // название товара
-    itemPrice = d.querySelector(".pizza__item-price").innerHTML; // стоимость товара
+    itemTitle = parentBox.querySelector(".pizza__item-title").innerHTML, // название товара
+    itemPrice = parentBox.querySelector(".pizza__item-price").innerHTML; // стоимость товара
   if (cartData.hasOwnProperty(itemId)) {
     // если такой товар уже в корзине, то добавляем +1 к его количеству
     cartData[itemId][2] += 1;
@@ -55,6 +54,7 @@ for (let i = 0; i < pizzaItem.length; i++) {
 
 // Открываем корзину со списком добавленных товаров
 function openCart(e) {
+  d.querySelector(".basket-wrapper").style.display = "block";
   let cartData = getCartData(), // вытаскиваем все данные корзины
     totalItems = "";
   // если что-то в корзине уже есть, начинаем формировать данные для вывода

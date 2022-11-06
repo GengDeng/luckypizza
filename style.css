@@ -1011,4 +1011,6 @@ a {
 
 .basket-wrapper {
   z-index: 50;
+  display: none;
+  position: fixed;
 }
