@@ -1011,6 +1011,10 @@ a {
 
 .basket-wrapper {
   z-index: 50;
+  position: fixed;
+}
+
+.product-list {
   display: none;
   position: fixed;
 }
