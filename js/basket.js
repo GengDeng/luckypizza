@@ -1,7 +1,11 @@
 let d = document,
   pizzaItem = d.querySelectorAll(".item-product"), // блок каждого товара
-  basketWrapper = d.querySelector(".product-list"); // блок вывода данных корзины
-
+  basketWrapper = d.querySelector(".product-list"), // блок вывода данных корзины
+  productValue = d.querySelector(".product-value"),
+addButton = d.querySelectorAll('.add_button');
+let value = 0
+console.log(addButton)
+  
 // Функция кроссбраузерной установки обработчика событий
 function addEvent(elem, type, handler) {
   if (elem.addEventListener) {
@@ -50,33 +54,9 @@ function addToCart(e) {
 // Устанавливаем обработчик события на каждую кнопку "Добавить в корзину"
 for (let i = 0; i < pizzaItem.length; i++) {
   addEvent(pizzaItem[i].querySelector(".add_button"), "click", addToCart);
-  addEvent(pizzaItem[i].querySelector(".add_button"), "click", openCarts);
+  addEvent(pizzaItem[i].querySelector(".add_button"), "click", openCart);
 }
 
-
-function openCarts(e) {
-  
-  let cartData = getCartData(), // вытаскиваем все данные корзины
-    totalItems = "";
-  // если что-то в корзине уже есть, начинаем формировать данные для вывода
-  if (cartData !== null) {
-    totalItems =
-      '<table class="shopping_list"><tr><th>Наименование</th><th>Цена</th><th>Кол-во</th></tr>';
-    for (let items in cartData) {
-      totalItems += "<tr>";
-      for (let i = 0; i < cartData[items].length; i++) {
-        totalItems += "<td>" + cartData[items][i] + "</td>";
-      }
-      totalItems += "</tr>";
-    }
-    totalItems += "</table>";
-    basketWrapper.innerHTML = totalItems;
-  } else {
-    // если в корзине пусто, то сигнализируем об этом
-    basketWrapper.innerHTML = "В корзине пусто!";
-  }
-  return false;
-}
 
 // Открываем корзину со списком добавленных товаров
 function openCart(e) {
@@ -86,7 +66,7 @@ function openCart(e) {
   // если что-то в корзине уже есть, начинаем формировать данные для вывода
   if (cartData !== null) {
     totalItems =
-      '<table class="shopping_list"><tr><th>Наименование</th><th>Цена</th><th>Кол-во</th></tr>';
+      '<table class="shopping__list"><tr><th shopping__head>Наименование</th><th shopping__head>Цена</th><th shopping__head>Кол-во</th></tr>';
     for (let items in cartData) {
       totalItems += "<tr>";
       for (let i = 0; i < cartData[items].length; i++) {
@@ -104,8 +84,11 @@ function openCart(e) {
 }
 /* Открыть корзину */
 
+window.onload = ( event) => {
 
-addEvent(d.getElementById("checkout"), "click", openCart);
+  openCart();
+
+} ;
 /* Очистить корзину */
 addEvent(d.getElementById("clear_cart"), "click", function (e) {
   localStorage.removeItem("cart");

@@ -839,7 +839,8 @@ a {
 }
 
 .add_button:hover {
-  background: red;
+  background: #56433D;
+  color: #F9C941;
 }
 
 .all-title {
@@ -1012,9 +1013,54 @@ a {
 .basket-wrapper {
   z-index: 50;
   position: fixed;
+  width: 22em;
+  right: 10px;
+}
+.basket-wrapper__clear {
+  background-color: #56433D;
+  color: #F9C941;
 }
 
 .product-list {
-  display: none;
-  position: fixed;
+  display: block;
+}
+
+.shopping__list {
+  border-spacing: 0 10px;
+  font-weight: bold;
+}
+
+th {
+  padding: 10px 20px;
+  background: #56433D;
+  color: #F9C941;
+  border-right: 2px solid;
+  font-size: 0.9em;
+}
+
+th:first-child {
+  text-align: left;
+}
+
+th:last-child {
+  border-right: none;
+}
+
+td {
+  vertical-align: middle;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 2px solid #56433D;
+  border-bottom: 2px solid #56433D;
+  border-right: 2px solid #56433D;
+}
+
+td:first-child {
+  border-left: 2px solid #56433D;
+  border-right: none;
+}
+
+td:nth-child(2) {
+  text-align: left;
 }
